@@ -11,6 +11,8 @@ def main():
     while True:
         opcao = mostrar_menu()    
         if opcao == 'x': break
+        elif opcao == 'nu': novo_usuario()
+        elif opcao == 'c': nova_conta()
         elif opcao == 'd': saldo, extrato = depositar(saldo, extrato)
         elif opcao == 's': saldo, extrato = sacar(quantidade_de_saques, saldo, extrato)
         elif opcao == 'e': print(extrato)
